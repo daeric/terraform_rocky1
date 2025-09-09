@@ -20,3 +20,9 @@ resource "nutanix_deploy_templates_v2" "vm_from_template" {
       num_threads_per_core=1
     }
 }
+
+#uncomment and run after the initial apply
+#resource "nutanix_virtual_machine_v2" "vm-import" {}
+
+#execute this command
+#terraform import nutanix_virtual_machine_v2.vm-import <UUID>
